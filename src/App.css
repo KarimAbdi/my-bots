@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+
+
+.bot-collection{
+ h1{
+  text-align: center;
+ }
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-auto-rows: minmax(158px);
+}
+.army-bot{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-auto-rows: minmax(158px);
+  
+ 
+
+}
+.bot-card {
+  width: 200px; 
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+}
+
+.bot-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.bot-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.bot-card h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #333;
+}
+
+.bot-card p {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 5px 0 0;
+}
+
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
